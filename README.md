@@ -1,7 +1,8 @@
 # jenkins-example
 ## Setups
 1. Enviroment for deploying App Center: 
-    - App Center CLI
-    ```yarn global add appcenter-cli
-    - JQ library
-    ```brew install jq 
+    - Netlify CLI: ```npm install -g netlify-cli```
+    - App Center CLI: 
+    ```npm install -g appcenter-cli```
+    - JQ library: 
+    ```brew install jq``` 

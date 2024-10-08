@@ -11,7 +11,7 @@ netlify status
 netlify link --id $NETLIFY_SITE_ID
 
 # Build web
-cd ../web
+cd ./web
 
 yarn
 
