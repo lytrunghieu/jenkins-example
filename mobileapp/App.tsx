@@ -69,6 +69,7 @@ function App(): React.JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <ScrollView
+        testID={'container'}
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />

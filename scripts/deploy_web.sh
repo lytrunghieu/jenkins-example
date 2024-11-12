@@ -13,8 +13,6 @@ netlify link --id $NETLIFY_SITE_ID
 # Build web
 cd ./web
 
-yarn
-
 # Deploy to Netlify server
 echo "Deploying to Netlify..."
 netlify deploy --prod --dir=build --site=$NETLIFY_SITE_ID
