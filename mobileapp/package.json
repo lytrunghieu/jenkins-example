@@ -10,7 +10,7 @@
     "test": "jest",
     "build_android": "cd ./android && ./gradlew assembleRelease",
     "build_android_test":"detox build --c android.emu.debug",
-    "bundle_for_tests_android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "bundle_for_tests_android": "mkdir -p android/app/src/main/assets react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
     "test_android": "concurrently --kill-others \"detox test --configuration android.emu.debug --forceExit --detectOpenHandles --take-screenshots failing $TEST\""
   },
   "dependencies": {
