@@ -11,6 +11,7 @@ nohup emulator -avd Pixel_4_XL_API_30 -dns-server "8.8.8.8,8.8.4.4" -no-snapshot
 cd $SCRIPT_DIR
 cd ../
 cd "./mobileapp" || exit
+yarn
 yarn build_android_test
 yarn test_android
 # kill the Android Mobile emulator
