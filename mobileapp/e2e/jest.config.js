@@ -11,9 +11,7 @@ module.exports = {
   verbose: true,
   reporters: ['detox/runners/jest/reporter', [
     'jest-html-reporters',
-    { publicPath: './reports',
-      filename: 'jest_html_reporters.html',
-      expand: true,
+    {
       inlineSource: true,
     },
   ]],
